@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { useSession } from '../state/session'
 import { LiveCancerCounter } from '../components/LiveCancerCounter'
 import { dailyUpdate } from '../components/DailyUpdateToast'
+import { AfricaNetwork } from '../components/AfricaNetwork'
 import type { View } from '../App'
 
 const VERCEL_URL = 'https://afya-cancer-registry.vercel.app'
@@ -45,10 +46,13 @@ export function Home({ navigate }: { navigate: (v: View) => void }) {
     <div className="home">
       <section className="home-hero">
         <div className="hero-glow" />
-        <h1>{t('home.greeting')}, {firstName} 👋</h1>
-        <p>
-          {t(`roles.${user!.role}`)} · {node?.name ?? user!.nodeId} — {t('home.subtitle')}
-        </p>
+        <div className="home-hero-text">
+          <h1>{t('home.greeting')}, {firstName} 👋</h1>
+          <p>{t(`roles.${user!.role}`)} · {node?.name ?? user!.nodeId} — {t('home.subtitle')}</p>
+        </div>
+        <div className="home-hero-map">
+          <AfricaNetwork />
+        </div>
       </section>
 
       <LiveCancerCounter />

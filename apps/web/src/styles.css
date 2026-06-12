@@ -216,16 +216,16 @@ tbody tr:hover { background: #f8fafc; }
 }
 /* animated Africa network */
 .africa-net { width: 100%; max-width: 200px; height: auto; margin: 0 auto; display: block; pointer-events: none; }
-.africa-silhouette { fill: rgba(255, 255, 255, 0.06); stroke: rgba(244, 196, 48, 0.6); stroke-width: 1.4; stroke-linejoin: round; }
-.map-base { stroke: rgba(255, 255, 255, 0.12); stroke-width: 1; }
-.map-link { stroke: #f4c430; stroke-width: 1.2; stroke-dasharray: 3 6; opacity: 0.9; animation: mapFlow 1s linear infinite; }
-@keyframes mapFlow { to { stroke-dashoffset: -18; } }
-.map-pulse { fill: #ffffff; filter: drop-shadow(0 0 5px #ffd75e); }
-.map-node-core { fill: #ffd75e; filter: drop-shadow(0 0 4px rgba(255, 215, 94, 0.95)); }
-.map-node-ring { fill: none; stroke: #ffd75e; stroke-width: 1.4; transform-box: fill-box; transform-origin: center; animation: mapPulse 2.6s ease-out infinite; }
-@keyframes mapPulse { 0% { transform: scale(0.25); opacity: 0.9; } 70% { opacity: 0; } 100% { transform: scale(2.4); opacity: 0; } }
+/* base/flow links + nodes sized for the 1000×1000 viewBox */
+.map-base { stroke: rgba(255, 255, 255, 0.14); stroke-width: 3; }
+.map-link { stroke: #ffd75e; stroke-width: 3.5; stroke-dasharray: 9 14; opacity: 0.95; animation: mapFlow 0.9s linear infinite; }
+@keyframes mapFlow { to { stroke-dashoffset: -46; } }
+.map-pulse { fill: #ffffff; filter: drop-shadow(0 0 9px #ffd75e); }
+.map-node-core { fill: #ffd75e; filter: drop-shadow(0 0 8px rgba(255, 215, 94, 0.95)); }
+.map-node-ring { fill: none; stroke: #ffd75e; stroke-width: 3; transform-box: fill-box; transform-origin: center; animation: mapPulse 2.6s ease-out infinite; }
+@keyframes mapPulse { 0% { transform: scale(0.25); opacity: 0.9; } 70% { opacity: 0; } 100% { transform: scale(2.6); opacity: 0; } }
 .map-star { fill: #fff; animation: mapTwinkle 2s ease-in-out infinite; }
-@keyframes mapTwinkle { 0%, 100% { opacity: 0.12; } 50% { opacity: 0.95; } }
+@keyframes mapTwinkle { 0%, 100% { opacity: 0.1; } 50% { opacity: 0.9; } }
 
 /* developer credit */
 .auth-credit { font-size: 0.82rem; color: #bfe9d2; line-height: 1.5; }
@@ -284,10 +284,15 @@ tbody tr:hover { background: #f8fafc; }
 /* ===== Home landing (compact — fits one screen, no scroll) ===== */
 .home { display: flex; flex-direction: column; gap: 12px; }
 .home-hero {
-  position: relative; overflow: hidden; color: #fff; border-radius: 16px; padding: 18px 26px;
+  position: relative; overflow: hidden; color: #fff; border-radius: 16px; padding: 16px 26px;
   background: linear-gradient(135deg, #0b6b3a 0%, #0a5e54 100%);
   box-shadow: 0 10px 26px rgba(11, 107, 58, 0.18);
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
 }
+.home-hero-text { position: relative; z-index: 1; }
+.home-hero-map { flex: 0 0 auto; width: 168px; align-self: center; }
+.home-hero-map .africa-net { max-width: 168px; }
+@media (max-width: 700px) { .home-hero-map { display: none; } }
 .home-hero h1 { color: #fff; font-size: 1.4rem; margin: 0 0 2px; }
 .home-hero p { color: #cfeede; margin: 0; font-size: 0.92rem; }
 .home-hero .hero-glow { position: absolute; width: 240px; height: 240px; border-radius: 50%; background: #f4c430; opacity: 0.16; filter: blur(46px); top: -70px; inset-inline-end: -40px; }
