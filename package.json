@@ -1,0 +1,32 @@
+{
+  "name": "afya-cancer-registry",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Open-source, offline-first, multilingual African Cancer Registry platform aligned to IARC/IACR, ICD-O-3, FHIR/mCODE and DHIS2 standards.",
+  "license": "Apache-2.0",
+  "workspaces": [
+    "apps/web",
+    "apps/sync-gateway"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace apps/web",
+    "dev:gateway": "npm run dev --workspace apps/sync-gateway",
+    "build": "npm run build --workspace apps/web",
+    "typecheck": "npm run typecheck --workspace apps/web && npm run typecheck --workspace apps/sync-gateway",
+    "test": "npm run test --workspace apps/web"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "cancer-registry",
+    "africa",
+    "oncology",
+    "ICD-O-3",
+    "FHIR",
+    "mCODE",
+    "DHIS2",
+    "offline-first",
+    "global-health"
+  ]
+}
