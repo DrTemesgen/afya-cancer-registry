@@ -4,6 +4,7 @@
     "tagline": "Vigilancia del cáncer de código abierto para África"
   },
   "nav": {
+    "home": "Inicio",
     "dashboard": "Panel",
     "newCase": "Nuevo caso",
     "cases": "Casos",
@@ -27,6 +28,36 @@
       "standards": "Basado en IARC, ICD-O-3, FHIR y DHIS2",
       "privacy": "Los datos del paciente permanecen locales por diseño"
     }
+  },
+  "home": {
+    "greeting": "Bienvenido",
+    "subtitle": "su espacio de vigilancia del cáncer",
+    "liveTitle": "Contador mundial del cáncer — este año",
+    "liveNote": "Estimación modelada a partir de las cifras anuales de GLOBOCAN — datos de concienciación, no vigilancia en tiempo real.",
+    "worldCases": "Nuevos casos de cáncer en el mundo",
+    "worldDeaths": "Muertes por cáncer en el mundo",
+    "africaCases": "Nuevos casos de cáncer en África",
+    "africaDeaths": "Muertes por cáncer en África",
+    "thisYear": "este año",
+    "updateTitle": "Actualización de hoy sobre el cáncer",
+    "quickActions": "Acciones rápidas",
+    "openDashboardDesc": "Incidencia, tasas y calidad de los datos",
+    "newCaseDesc": "Registrar un nuevo tumor",
+    "registriesDesc": "Explorar la jerarquía de registros",
+    "interopDesc": "Exportación FHIR, DHIS2 e IARC",
+    "footerDemo": "Demostración en línea",
+    "footerSource": "Código fuente",
+    "footerTagline": "Registro Africano del Cáncer — vigilancia del cáncer de código abierto para África",
+    "dismiss": "Cerrar",
+    "notifTitle": "Actualización diaria sobre el cáncer",
+    "updates": [
+      "Hasta el 40% de los cánceres pueden prevenirse reduciendo factores de riesgo como el tabaco, el alcohol y las infecciones.",
+      "El cáncer de cuello uterino puede eliminarse mediante la vacunación contra el VPH, el cribado y el tratamiento oportuno.",
+      "El cáncer de mama es el cáncer más diagnosticado entre las mujeres en gran parte de África — la detección temprana salva vidas.",
+      "Más del 70% de las muertes por cáncer ocurren en países de ingresos bajos y medios.",
+      "El tabaco es la mayor causa evitable de cáncer, vinculada a cerca de una cuarta parte de las muertes por cáncer.",
+      "Muchos cánceres infantiles, como el linfoma de Burkitt, son curables cuando se diagnostican y tratan a tiempo."
+    ]
   },
   "common": {
     "save": "Guardar",
@@ -88,7 +119,11 @@
     "gradeFair": "Regular",
     "gradePoor": "Bajo",
     "gradeNa": "N/D",
-    "dataQualityGrade": "Nivel de calidad"
+    "dataQualityGrade": "Nivel de calidad",
+    "ageSiteTitle": "Incidencia por localización y grupo de edad",
+    "ageSiteNote": "Números de casos por edad, estilo CI5 (IARC)",
+    "bothSexes": "Ambos sexos",
+    "ageSiteFooter": "Números de casos por edad (estilo CI5). · = 0."
   },
   "case": {
     "newTitle": "Nuevo caso",

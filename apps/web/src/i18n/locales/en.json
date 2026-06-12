@@ -4,6 +4,7 @@
     "tagline": "Open-source cancer surveillance for Africa"
   },
   "nav": {
+    "home": "Home",
     "dashboard": "Dashboard",
     "newCase": "New case",
     "cases": "Cases",
@@ -27,6 +28,36 @@
       "standards": "Built on IARC, ICD-O-3, FHIR & DHIS2",
       "privacy": "Patient data stays local by design"
     }
+  },
+  "home": {
+    "greeting": "Welcome",
+    "subtitle": "your cancer surveillance workspace",
+    "liveTitle": "Global cancer counter — this year",
+    "liveNote": "Modelled estimate from GLOBOCAN annual figures — illustrative awareness data, not live surveillance.",
+    "worldCases": "New cancer cases worldwide",
+    "worldDeaths": "Cancer deaths worldwide",
+    "africaCases": "New cancer cases in Africa",
+    "africaDeaths": "Cancer deaths in Africa",
+    "thisYear": "this year",
+    "updateTitle": "Today's cancer update",
+    "quickActions": "Quick actions",
+    "openDashboardDesc": "Incidence, rates and data quality",
+    "newCaseDesc": "Register a new tumour",
+    "registriesDesc": "Explore the registry hierarchy",
+    "interopDesc": "FHIR, DHIS2 & IARC export",
+    "footerDemo": "Live demo",
+    "footerSource": "Source code",
+    "footerTagline": "Afya Cancer Registry — open-source cancer surveillance for Africa",
+    "dismiss": "Dismiss",
+    "notifTitle": "Daily cancer update",
+    "updates": [
+      "Up to 40% of cancers can be prevented by reducing risk factors such as tobacco, alcohol and infections.",
+      "Cervical cancer can be eliminated through HPV vaccination, screening and timely treatment.",
+      "Breast cancer is the most commonly diagnosed cancer among women across much of Africa — early detection saves lives.",
+      "More than 70% of cancer deaths occur in low- and middle-income countries.",
+      "Tobacco is the single largest preventable cause of cancer, linked to about a quarter of cancer deaths.",
+      "Many childhood cancers, such as Burkitt lymphoma, are curable when diagnosed and treated early."
+    ]
   },
   "common": {
     "save": "Save",
@@ -88,7 +119,11 @@
     "gradeFair": "Fair",
     "gradePoor": "Poor",
     "gradeNa": "N/A",
-    "dataQualityGrade": "Quality grade"
+    "dataQualityGrade": "Quality grade",
+    "ageSiteTitle": "Incidence by site and age group",
+    "ageSiteNote": "Age-specific case numbers, CI5-style (IACR)",
+    "bothSexes": "Both sexes",
+    "ageSiteFooter": "Age-specific case numbers (CI5-style). · = 0."
   },
   "case": {
     "newTitle": "New case",

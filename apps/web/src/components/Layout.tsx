@@ -20,6 +20,7 @@ export function Layout({
   const canCase = user ? access.canViewCaseLevel(user) : false
 
   const items: { key: View; label: string; show: boolean }[] = [
+    { key: 'home', label: t('nav.home'), show: true },
     { key: 'dashboard', label: t('nav.dashboard'), show: true },
     { key: 'newCase', label: t('nav.newCase'), show: canCase },
     { key: 'cases', label: t('nav.cases'), show: true },

@@ -3,14 +3,17 @@ import { useTranslation } from 'react-i18next'
 import { Layout } from './components/Layout'
 import { useSession } from './state/session'
 import { Login } from './pages/Login'
+import { Home } from './pages/Home'
 import { Dashboard } from './pages/Dashboard'
 import { CaseList } from './pages/CaseList'
 import { CaseEntry } from './pages/CaseEntry'
 import { Registries } from './pages/Registries'
 import { Interop } from './pages/Interop'
 import { Settings } from './pages/Settings'
+import { DailyUpdateToast } from './components/DailyUpdateToast'
 
 export type View =
+  | 'home'
   | 'dashboard'
   | 'cases'
   | 'newCase'
@@ -22,7 +25,7 @@ export type View =
 export default function App() {
   const { t } = useTranslation()
   const { user, loading } = useSession()
-  const [view, setView] = useState<View>('dashboard')
+  const [view, setView] = useState<View>('home')
   const [editId, setEditId] = useState<string | undefined>()
 
   function navigate(v: View, id?: string) {
@@ -33,18 +36,23 @@ export default function App() {
   if (!user) return <Login />
 
   return (
-    <Layout view={view} navigate={navigate}>
-      {loading ? (
-        <div className="card">{t('common.loading')}</div>
-      ) : (
-        renderView(view, editId, navigate)
-      )}
-    </Layout>
+    <>
+      <Layout view={view} navigate={navigate}>
+        {loading ? (
+          <div className="card">{t('common.loading')}</div>
+        ) : (
+          renderView(view, editId, navigate)
+        )}
+      </Layout>
+      <DailyUpdateToast />
+    </>
   )
 }
 
 function renderView(view: View, editId: string | undefined, navigate: (v: View, id?: string) => void) {
   switch (view) {
+    case 'home':
+      return <Home navigate={navigate} />
     case 'dashboard':
       return <Dashboard />
     case 'cases':

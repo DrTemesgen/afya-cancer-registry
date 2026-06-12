@@ -65,6 +65,7 @@ than inventing a new one. See [`docs/STANDARDS.md`](docs/STANDARDS.md) for the f
 │   ├── INTEROPERABILITY.md
 │   ├── LOCALIZATION.md
 │   ├── SECURITY-PRIVACY.md
+│   ├── CONTINENTAL-ALIGNMENT.md   ← IACR/CI5 adoption + fitness for continental adoption
 │   ├── GOVERNANCE.md
 │   └── ROADMAP.md
 ├── apps/

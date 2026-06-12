@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useSession } from '../state/session'
 import { BarList, CompareBars, Stat, type BarDatum } from '../components/charts'
+import { AgeSiteTable } from '../components/AgeSiteTable'
 import {
   cellsInScope,
   countBy,
@@ -123,6 +124,10 @@ export function Dashboard() {
               />
               <p className="help" style={{ color: 'var(--muted)', fontSize: '0.78rem' }}>{t('dashboard.comparisonNote')}</p>
             </div>
+          </div>
+
+          <div style={{ marginTop: 16 }}>
+            <AgeSiteTable cells={cells} />
           </div>
         </>
       )}

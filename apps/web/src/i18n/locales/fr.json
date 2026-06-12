@@ -4,6 +4,7 @@
     "tagline": "Surveillance du cancer en libre accès pour l’Afrique"
   },
   "nav": {
+    "home": "Accueil",
     "dashboard": "Tableau de bord",
     "newCase": "Nouveau cas",
     "cases": "Cas",
@@ -27,6 +28,36 @@
       "standards": "Basé sur IARC, ICD-O-3, FHIR et DHIS2",
       "privacy": "Les données patients restent locales par conception"
     }
+  },
+  "home": {
+    "greeting": "Bienvenue",
+    "subtitle": "votre espace de surveillance du cancer",
+    "liveTitle": "Compteur mondial du cancer — cette année",
+    "liveNote": "Estimation modélisée à partir des chiffres annuels GLOBOCAN — données de sensibilisation, non une surveillance en temps réel.",
+    "worldCases": "Nouveaux cas de cancer dans le monde",
+    "worldDeaths": "Décès par cancer dans le monde",
+    "africaCases": "Nouveaux cas de cancer en Afrique",
+    "africaDeaths": "Décès par cancer en Afrique",
+    "thisYear": "cette année",
+    "updateTitle": "Le point cancer du jour",
+    "quickActions": "Actions rapides",
+    "openDashboardDesc": "Incidence, taux et qualité des données",
+    "newCaseDesc": "Enregistrer une nouvelle tumeur",
+    "registriesDesc": "Explorer la hiérarchie des registres",
+    "interopDesc": "Export FHIR, DHIS2 et IARC",
+    "footerDemo": "Démo en ligne",
+    "footerSource": "Code source",
+    "footerTagline": "Registre Africain du Cancer — surveillance du cancer en libre accès pour l’Afrique",
+    "dismiss": "Fermer",
+    "notifTitle": "Point cancer du jour",
+    "updates": [
+      "Jusqu’à 40 % des cancers peuvent être évités en réduisant les facteurs de risque tels que le tabac, l’alcool et les infections.",
+      "Le cancer du col de l’utérus peut être éliminé grâce à la vaccination contre le HPV, au dépistage et à un traitement rapide.",
+      "Le cancer du sein est le cancer le plus fréquemment diagnostiqué chez les femmes dans une grande partie de l’Afrique — le dépistage précoce sauve des vies.",
+      "Plus de 70 % des décès par cancer surviennent dans les pays à revenu faible ou intermédiaire.",
+      "Le tabac est la première cause évitable de cancer, liée à environ un quart des décès par cancer.",
+      "De nombreux cancers de l’enfant, comme le lymphome de Burkitt, sont guérissables s’ils sont diagnostiqués et traités tôt."
+    ]
   },
   "common": {
     "save": "Enregistrer",
@@ -88,7 +119,11 @@
     "gradeFair": "Moyen",
     "gradePoor": "Faible",
     "gradeNa": "N/D",
-    "dataQualityGrade": "Niveau de qualité"
+    "dataQualityGrade": "Niveau de qualité",
+    "ageSiteTitle": "Incidence par site et tranche d’âge",
+    "ageSiteNote": "Nombres de cas par âge, façon CI5 (IARC)",
+    "bothSexes": "Les deux sexes",
+    "ageSiteFooter": "Nombres de cas par âge (façon CI5). · = 0."
   },
   "case": {
     "newTitle": "Nouveau cas",

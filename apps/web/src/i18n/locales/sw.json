@@ -4,6 +4,7 @@
     "tagline": "Ufuatiliaji wa saratani wa chanzo huria kwa Afrika"
   },
   "nav": {
+    "home": "Mwanzo",
     "dashboard": "Dashibodi",
     "newCase": "Kesi mpya",
     "cases": "Kesi",
@@ -27,6 +28,36 @@
       "standards": "Imejengwa kwa IARC, ICD-O-3, FHIR na DHIS2",
       "privacy": "Data ya mgonjwa hubaki ndani kwa muundo"
     }
+  },
+  "home": {
+    "greeting": "Karibu",
+    "subtitle": "eneo lako la ufuatiliaji wa saratani",
+    "liveTitle": "Kihesabu cha saratani duniani — mwaka huu",
+    "liveNote": "Makadirio yaliyoigwa kutoka takwimu za mwaka za GLOBOCAN — data ya uelimishaji, si ufuatiliaji wa moja kwa moja.",
+    "worldCases": "Kesi mpya za saratani duniani",
+    "worldDeaths": "Vifo vya saratani duniani",
+    "africaCases": "Kesi mpya za saratani Afrika",
+    "africaDeaths": "Vifo vya saratani Afrika",
+    "thisYear": "mwaka huu",
+    "updateTitle": "Taarifa ya saratani ya leo",
+    "quickActions": "Vitendo vya haraka",
+    "openDashboardDesc": "Matukio, viwango na ubora wa data",
+    "newCaseDesc": "Sajili uvimbe mpya",
+    "registriesDesc": "Chunguza daraja la madaftari",
+    "interopDesc": "Hamisha kwa FHIR, DHIS2 na IARC",
+    "footerDemo": "Onyesho mtandaoni",
+    "footerSource": "Msimbo wa chanzo",
+    "footerTagline": "Daftari la Saratani la Afrika — ufuatiliaji wa saratani wa chanzo huria kwa Afrika",
+    "dismiss": "Funga",
+    "notifTitle": "Taarifa ya saratani ya kila siku",
+    "updates": [
+      "Hadi asilimia 40 ya saratani zinaweza kuzuilika kwa kupunguza vihatarishi kama tumbaku, pombe na maambukizi.",
+      "Saratani ya shingo ya kizazi inaweza kutokomezwa kupitia chanjo ya HPV, uchunguzi na matibabu kwa wakati.",
+      "Saratani ya matiti ndiyo saratani inayogundulika zaidi kwa wanawake katika sehemu kubwa ya Afrika — ugunduzi wa mapema huokoa maisha.",
+      "Zaidi ya asilimia 70 ya vifo vya saratani hutokea katika nchi za kipato cha chini na cha kati.",
+      "Tumbaku ndiyo chanzo kikubwa kinachozuilika cha saratani, kinachohusishwa na takriban robo ya vifo vya saratani.",
+      "Saratani nyingi za utotoni, kama limfoma ya Burkitt, zinatibika zikigunduliwa na kutibiwa mapema."
+    ]
   },
   "common": {
     "save": "Hifadhi",
@@ -88,7 +119,11 @@
     "gradeFair": "Wastani",
     "gradePoor": "Hafifu",
     "gradeNa": "Haitumiki",
-    "dataQualityGrade": "Daraja la ubora"
+    "dataQualityGrade": "Daraja la ubora",
+    "ageSiteTitle": "Matukio kwa eneo na kundi la umri",
+    "ageSiteNote": "Idadi ya kesi kwa umri, mtindo wa CI5 (IARC)",
+    "bothSexes": "Jinsia zote",
+    "ageSiteFooter": "Idadi ya kesi kwa umri (mtindo wa CI5). · = 0."
   },
   "case": {
     "newTitle": "Kesi mpya",

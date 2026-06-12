@@ -4,6 +4,7 @@
     "tagline": "Vigilância do cancro de código aberto para África"
   },
   "nav": {
+    "home": "Início",
     "dashboard": "Painel",
     "newCase": "Novo caso",
     "cases": "Casos",
@@ -27,6 +28,36 @@
       "standards": "Baseado em IARC, ICD-O-3, FHIR e DHIS2",
       "privacy": "Os dados dos doentes permanecem locais por conceção"
     }
+  },
+  "home": {
+    "greeting": "Bem-vindo",
+    "subtitle": "o seu espaço de vigilância do cancro",
+    "liveTitle": "Contador mundial do cancro — este ano",
+    "liveNote": "Estimativa modelada a partir dos números anuais GLOBOCAN — dados de sensibilização, não vigilância em tempo real.",
+    "worldCases": "Novos casos de cancro no mundo",
+    "worldDeaths": "Mortes por cancro no mundo",
+    "africaCases": "Novos casos de cancro em África",
+    "africaDeaths": "Mortes por cancro em África",
+    "thisYear": "este ano",
+    "updateTitle": "Atualização sobre o cancro de hoje",
+    "quickActions": "Ações rápidas",
+    "openDashboardDesc": "Incidência, taxas e qualidade dos dados",
+    "newCaseDesc": "Registar um novo tumor",
+    "registriesDesc": "Explorar a hierarquia de registos",
+    "interopDesc": "Exportação FHIR, DHIS2 e IARC",
+    "footerDemo": "Demonstração online",
+    "footerSource": "Código-fonte",
+    "footerTagline": "Registo Africano do Cancro — vigilância do cancro de código aberto para África",
+    "dismiss": "Fechar",
+    "notifTitle": "Atualização diária sobre o cancro",
+    "updates": [
+      "Até 40% dos cancros podem ser prevenidos reduzindo fatores de risco como o tabaco, o álcool e as infeções.",
+      "O cancro do colo do útero pode ser eliminado através da vacinação contra o HPV, do rastreio e do tratamento atempado.",
+      "O cancro da mama é o cancro mais diagnosticado entre as mulheres em grande parte de África — a deteção precoce salva vidas.",
+      "Mais de 70% das mortes por cancro ocorrem em países de rendimento baixo e médio.",
+      "O tabaco é a maior causa evitável de cancro, ligada a cerca de um quarto das mortes por cancro.",
+      "Muitos cancros infantis, como o linfoma de Burkitt, são curáveis quando diagnosticados e tratados precocemente."
+    ]
   },
   "common": {
     "save": "Guardar",
@@ -88,7 +119,11 @@
     "gradeFair": "Razoável",
     "gradePoor": "Fraco",
     "gradeNa": "N/D",
-    "dataQualityGrade": "Nível de qualidade"
+    "dataQualityGrade": "Nível de qualidade",
+    "ageSiteTitle": "Incidência por localização e grupo etário",
+    "ageSiteNote": "Números de casos por idade, estilo CI5 (IARC)",
+    "bothSexes": "Ambos os sexos",
+    "ageSiteFooter": "Números de casos por idade (estilo CI5). · = 0."
   },
   "case": {
     "newTitle": "Novo caso",
