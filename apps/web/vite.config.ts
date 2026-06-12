@@ -2,6 +2,7 @@
 import { defineConfig } from 'vitest/config'
 import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
+import { nodePolyfills } from 'vite-plugin-node-polyfills'
 
 // Afya Cancer Registry — offline-first PWA.
 // The PWA plugin makes the app installable on a tablet or desktop and caches
@@ -9,6 +10,9 @@ import { VitePWA } from 'vite-plugin-pwa'
 export default defineConfig({
   plugins: [
     react(),
+    // PouchDB (and its deps) extend Node's EventEmitter and expect `process`/`Buffer`.
+    // Polyfill those Node builtins so the production browser bundle doesn't crash.
+    nodePolyfills({ include: ['events', 'process', 'buffer', 'util'], globals: { process: true, Buffer: true } }),
     VitePWA({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg'],

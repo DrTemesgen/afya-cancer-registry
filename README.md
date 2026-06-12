@@ -5,6 +5,15 @@
 > hospital up to continental aggregation — built on international cancer-registration and health-data
 > interoperability standards.
 
+### 🌍 Live demo — **<https://afya-cancer-registry.vercel.app>**
+
+Source code: <https://github.com/DrTemesgen/afya-cancer-registry>
+
+The live demo is the installable PWA loaded with synthetic seed data. Sign in as any demo user
+(e.g. *Joseph — Kenya MoH* for national dashboards, or *Aisha — Nairobi clerk* for case entry),
+switch between the six African Union languages, and explore the hierarchy, validation, dashboards and
+FHIR/DHIS2 exports. **No real patient data is included.**
+
 **Afya** means *health* in Kiswahili, an African Union working language.
 
 ---
