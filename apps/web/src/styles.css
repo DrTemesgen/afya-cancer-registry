@@ -149,7 +149,7 @@ tbody tr:hover { background: #f8fafc; }
   min-height: 100vh;
   display: grid;
   place-items: center;
-  padding: 32px 16px;
+  padding: 14px;
   overflow: hidden;
   background:
     radial-gradient(1100px 560px at 8% -12%, #0e7a43 0%, transparent 58%),
@@ -190,31 +190,32 @@ tbody tr:hover { background: #f8fafc; }
 
 /* hero panel */
 .auth-hero {
-  padding: 42px 38px;
+  padding: 26px 30px;
   color: #eafff3;
   display: flex;
   flex-direction: column;
-  gap: 26px;
+  gap: 14px;
+  min-width: 0;
   background: linear-gradient(160deg, rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0.02));
 }
 .auth-brand { display: flex; align-items: center; gap: 14px; }
-.auth-brand img { width: 56px; height: 56px; border-radius: 15px; background: rgba(255, 255, 255, 0.14); padding: 7px; }
-.auth-title { font-size: 1.55rem; font-weight: 800; color: #fff; letter-spacing: -0.01em; line-height: 1.1; }
+.auth-brand img { width: 48px; height: 48px; border-radius: 13px; background: rgba(255, 255, 255, 0.14); padding: 6px; }
+.auth-title { font-size: 1.4rem; font-weight: 800; color: #fff; letter-spacing: -0.01em; line-height: 1.1; }
 .auth-tagline { color: #bfe9d2; font-size: 0.95rem; margin-top: 2px; }
-.auth-feats { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 15px; }
+.auth-feats { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
 .auth-feat { display: flex; gap: 13px; align-items: center; }
 .auth-feat .ic {
-  width: 40px; height: 40px; border-radius: 11px; flex: 0 0 auto;
+  width: 34px; height: 34px; border-radius: 10px; flex: 0 0 auto;
   background: rgba(255, 255, 255, 0.13); display: grid; place-items: center; color: #ffd75e;
 }
-.auth-feat > span:last-child { font-size: 0.96rem; color: #eafff3; }
+.auth-feat > span:last-child { font-size: 0.9rem; color: #eafff3; }
 .auth-badges { display: flex; flex-wrap: wrap; gap: 8px; }
 .auth-badges span {
   font-size: 0.72rem; font-weight: 700; letter-spacing: 0.02em; color: #0b3b27;
   background: linear-gradient(180deg, #ffd75e, #f4c430); padding: 5px 11px; border-radius: 999px;
 }
 /* animated Africa network */
-.africa-net { width: 100%; max-width: 270px; height: auto; margin: 2px auto 0; display: block; }
+.africa-net { width: 100%; max-width: 200px; height: auto; margin: 0 auto; display: block; }
 .africa-silhouette { fill: rgba(255, 255, 255, 0.05); stroke: rgba(244, 196, 48, 0.4); stroke-width: 1.1; }
 .map-base { stroke: rgba(255, 255, 255, 0.1); stroke-width: 1; }
 .map-link { stroke: #f4c430; stroke-width: 1.1; stroke-dasharray: 3 7; opacity: 0.85; animation: mapFlow 1.1s linear infinite; }
@@ -241,26 +242,28 @@ tbody tr:hover { background: #f8fafc; }
 /* sign-in card */
 .auth-card {
   background: #fff;
-  padding: 30px 30px 26px;
+  padding: 22px 24px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  max-height: min(90vh, 760px);
-  overflow: auto;
+  gap: 9px;
+  min-width: 0;
+  max-height: none;
+  overflow: visible;
 }
 .auth-card .field label { color: #475569; }
-.auth-h1 { font-size: 1.3rem; margin: 8px 0 0; }
-.auth-sub { color: var(--muted); font-size: 0.9rem; margin: 0 0 4px; }
+.auth-h1 { font-size: 1.2rem; margin: 4px 0 0; }
+.auth-sub { color: var(--muted); font-size: 0.86rem; margin: 0 0 2px; }
 .auth-note {
-  margin-top: 8px; font-size: 0.78rem; color: #92400e;
-  background: #fffbeb; border: 1px solid #fde68a; padding: 10px 12px; border-radius: 10px;
+  margin-top: 4px; font-size: 0.76rem; color: #92400e;
+  background: #fffbeb; border: 1px solid #fde68a; padding: 8px 11px; border-radius: 10px;
 }
 
-/* demo-user cards */
-.userlist { display: flex; flex-direction: column; gap: 9px; }
+/* demo-user cards — two columns so all users fit without scrolling */
+.userlist { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+@media (max-width: 560px) { .userlist { grid-template-columns: 1fr; } }
 .user {
-  display: flex; align-items: center; gap: 12px; text-align: start;
-  background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 10px 13px;
+  display: flex; align-items: center; gap: 9px; text-align: start; min-width: 0;
+  background: #fff; border: 1px solid var(--line); border-radius: 11px; padding: 8px 10px;
   transition: transform 0.14s ease, box-shadow 0.14s ease, border-color 0.14s ease, background 0.14s ease;
 }
 .user:hover {
@@ -268,14 +271,14 @@ tbody tr:hover { background: #f8fafc; }
   transform: translateY(-2px); box-shadow: 0 8px 20px rgba(11, 107, 58, 0.14);
 }
 .user-av {
-  width: 40px; height: 40px; border-radius: 11px; flex: 0 0 auto;
-  display: grid; place-items: center; color: #fff; font-weight: 800; font-size: 1.05rem;
+  width: 32px; height: 32px; border-radius: 9px; flex: 0 0 auto;
+  display: grid; place-items: center; color: #fff; font-weight: 800; font-size: 0.85rem;
   box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.25);
 }
 .user-meta { display: flex; flex-direction: column; min-width: 0; flex: 1; }
-.user-name { font-weight: 700; line-height: 1.2; }
-.user-role { font-size: 0.78rem; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.user-go { color: var(--green); font-weight: 800; font-size: 1.1rem; flex: 0 0 auto; opacity: 0.55; transition: opacity 0.14s, transform 0.14s; }
+.user-name { font-weight: 700; line-height: 1.2; font-size: 0.82rem; }
+.user-role { font-size: 0.7rem; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.user-go { color: var(--green); font-weight: 800; font-size: 1rem; flex: 0 0 auto; opacity: 0.5; transition: opacity 0.14s, transform 0.14s; }
 .user:hover .user-go { opacity: 1; transform: translateX(2px); }
 [dir="rtl"] .user-go { transform: scaleX(-1); }
 [dir="rtl"] .user:hover .user-go { transform: scaleX(-1) translateX(2px); }
