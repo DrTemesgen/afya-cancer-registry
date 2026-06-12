@@ -23,6 +23,9 @@ data/local/
 *.log
 npm-debug.log*
 
+# deploy
+.vercel/
+
 # editor / OS
 .vscode/
 .idea/
