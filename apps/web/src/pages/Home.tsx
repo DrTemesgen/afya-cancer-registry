@@ -7,6 +7,7 @@ import type { View } from '../App'
 
 const VERCEL_URL = 'https://afya-cancer-registry.vercel.app'
 const GITHUB_URL = 'https://github.com/DrTemesgen/afya-cancer-registry'
+const LINKEDIN_URL = 'https://www.linkedin.com/in/dr-temesgen-endalew/'
 
 const I = {
   dashboard: (
@@ -74,10 +75,17 @@ export function Home({ navigate }: { navigate: (v: View) => void }) {
       </div>
 
       <footer className="home-footer">
-        <span>{t('home.footerTagline')}</span>
+        <span>
+          {t('home.footerTagline')}
+          <br />
+          <span style={{ fontSize: '0.8rem' }}>
+            {t('common.developedBy')} <strong>Dr. Temesgen Endalew</strong>
+          </span>
+        </span>
         <span className="links">
           <a href={VERCEL_URL} target="_blank" rel="noreferrer">{t('home.footerDemo')} ↗</a>
           <a href={GITHUB_URL} target="_blank" rel="noreferrer">{t('home.footerSource')} ↗</a>
+          <a href={LINKEDIN_URL} target="_blank" rel="noreferrer">{t('common.connectLinkedIn')} ↗</a>
         </span>
       </footer>
     </div>

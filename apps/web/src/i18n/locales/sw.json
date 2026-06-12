@@ -89,7 +89,9 @@
     "actions": "Vitendo",
     "edit": "Hariri",
     "view": "Tazama",
-    "of": "kati ya"
+    "of": "kati ya",
+    "developedBy": "Imetengenezwa na",
+    "connectLinkedIn": "Ungana kwenye LinkedIn"
   },
   "dashboard": {
     "title": "Dashibodi",

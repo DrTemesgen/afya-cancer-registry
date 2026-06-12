@@ -89,7 +89,9 @@
     "actions": "Ações",
     "edit": "Editar",
     "view": "Ver",
-    "of": "de"
+    "of": "de",
+    "developedBy": "Desenvolvido por",
+    "connectLinkedIn": "Conecte-se no LinkedIn"
   },
   "dashboard": {
     "title": "Painel",

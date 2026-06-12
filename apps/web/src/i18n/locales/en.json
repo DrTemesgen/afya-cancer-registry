@@ -89,7 +89,9 @@
     "actions": "Actions",
     "edit": "Edit",
     "view": "View",
-    "of": "of"
+    "of": "of",
+    "developedBy": "Developed by",
+    "connectLinkedIn": "Connect on LinkedIn"
   },
   "dashboard": {
     "title": "Dashboard",

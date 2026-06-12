@@ -89,7 +89,9 @@
     "actions": "Actions",
     "edit": "Modifier",
     "view": "Voir",
-    "of": "sur"
+    "of": "sur",
+    "developedBy": "Développé par",
+    "connectLinkedIn": "Se connecter sur LinkedIn"
   },
   "dashboard": {
     "title": "Tableau de bord",

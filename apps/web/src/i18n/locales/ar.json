@@ -89,7 +89,9 @@
     "actions": "إجراءات",
     "edit": "تعديل",
     "view": "عرض",
-    "of": "من"
+    "of": "من",
+    "developedBy": "تطوير",
+    "connectLinkedIn": "تواصل عبر لينكدإن"
   },
   "dashboard": {
     "title": "لوحة المعلومات",

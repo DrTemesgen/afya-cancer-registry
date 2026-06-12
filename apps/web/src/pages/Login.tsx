@@ -2,7 +2,10 @@ import type { ReactNode } from 'react'
 import { useTranslation } from 'react-i18next'
 import { LANGUAGES } from '../i18n'
 import { useSession, DEMO_USERS } from '../state/session'
+import { AfricaNetwork } from '../components/AfricaNetwork'
 import type { Role } from '../core'
+
+const LINKEDIN_URL = 'https://www.linkedin.com/in/dr-temesgen-endalew/'
 
 const ROLE_COLOR: Record<Role, string> = {
   'data-entry': '#0b6b3a',
@@ -83,6 +86,14 @@ export function Login() {
             <span>ICD-O-3</span>
             <span>FHIR · mCODE</span>
             <span>DHIS2</span>
+          </div>
+
+          <AfricaNetwork />
+
+          <div className="auth-credit">
+            {t('common.developedBy')} <strong>Dr. Temesgen Endalew</strong>
+            <br />
+            <a href={LINKEDIN_URL} target="_blank" rel="noreferrer">{t('common.connectLinkedIn')} ↗</a>
           </div>
 
           <div className="auth-langstrip">

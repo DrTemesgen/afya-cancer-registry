@@ -213,7 +213,28 @@ tbody tr:hover { background: #f8fafc; }
   font-size: 0.72rem; font-weight: 700; letter-spacing: 0.02em; color: #0b3b27;
   background: linear-gradient(180deg, #ffd75e, #f4c430); padding: 5px 11px; border-radius: 999px;
 }
-.auth-langstrip { display: flex; flex-wrap: wrap; gap: 0 12px; margin-top: auto; color: #9fd9bd; font-size: 0.8rem; }
+/* animated Africa network */
+.africa-net { width: 100%; max-width: 270px; height: auto; margin: 2px auto 0; display: block; }
+.africa-silhouette { fill: rgba(255, 255, 255, 0.05); stroke: rgba(244, 196, 48, 0.4); stroke-width: 1.1; }
+.map-base { stroke: rgba(255, 255, 255, 0.1); stroke-width: 1; }
+.map-link { stroke: #f4c430; stroke-width: 1.1; stroke-dasharray: 3 7; opacity: 0.85; animation: mapFlow 1.1s linear infinite; }
+@keyframes mapFlow { to { stroke-dashoffset: -20; } }
+.map-node-core { fill: #ffd75e; filter: drop-shadow(0 0 3px rgba(255, 215, 94, 0.95)); }
+.map-node-ring { fill: none; stroke: #ffd75e; stroke-width: 1.4; transform-box: fill-box; transform-origin: center; animation: mapPulse 2.6s ease-out infinite; }
+@keyframes mapPulse { 0% { transform: scale(0.25); opacity: 0.9; } 70% { opacity: 0; } 100% { transform: scale(2.4); opacity: 0; } }
+.map-star { fill: #fff; animation: mapTwinkle 2s ease-in-out infinite; }
+@keyframes mapTwinkle { 0%, 100% { opacity: 0.12; } 50% { opacity: 0.95; } }
+@media (prefers-reduced-motion: reduce) {
+  .map-link, .map-node-ring, .map-star { animation: none; }
+}
+
+/* developer credit */
+.auth-credit { font-size: 0.82rem; color: #bfe9d2; line-height: 1.5; }
+.auth-credit strong { color: #fff; }
+.auth-credit a { color: #ffd75e; text-decoration: none; font-weight: 600; }
+.auth-credit a:hover { text-decoration: underline; }
+
+.auth-langstrip { display: flex; flex-wrap: wrap; gap: 0 12px; margin-top: 6px; color: #9fd9bd; font-size: 0.8rem; }
 .auth-langstrip span { position: relative; padding-inline-end: 12px; }
 .auth-langstrip span:not(:last-child)::after { content: '·'; position: absolute; inset-inline-end: 2px; opacity: 0.5; }
 
