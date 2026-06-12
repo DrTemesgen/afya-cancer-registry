@@ -19,7 +19,14 @@
     "role": "Jukumu",
     "node": "Amefungwa kwa",
     "enter": "Ingia",
-    "demoNote": "Onyesho pekee — hakuna data halisi ya mgonjwa. Rekodi zinazoweza kutambulika zipo tu katika ngazi ya kituo na daftari."
+    "demoNote": "Onyesho pekee — hakuna data halisi ya mgonjwa. Rekodi zinazoweza kutambulika zipo tu katika ngazi ya kituo na daftari.",
+    "welcome": "Karibu",
+    "feat": {
+      "offline": "Hufanya kazi nje ya mtandao — hulandanisha ukiunganishwa",
+      "languages": "Kwa lugha zote sita za Umoja wa Afrika",
+      "standards": "Imejengwa kwa IARC, ICD-O-3, FHIR na DHIS2",
+      "privacy": "Data ya mgonjwa hubaki ndani kwa muundo"
+    }
   },
   "common": {
     "save": "Hifadhi",

@@ -19,7 +19,14 @@
     "role": "Rol",
     "node": "Vinculado a",
     "enter": "Entrar",
-    "demoNote": "Solo demostración — sin datos reales de pacientes. Los registros identificables existen solo a nivel de centro y de registro."
+    "demoNote": "Solo demostración — sin datos reales de pacientes. Los registros identificables existen solo a nivel de centro y de registro.",
+    "welcome": "Bienvenido",
+    "feat": {
+      "offline": "Funciona sin conexión — sincroniza al conectarse",
+      "languages": "En los seis idiomas de la Unión Africana",
+      "standards": "Basado en IARC, ICD-O-3, FHIR y DHIS2",
+      "privacy": "Los datos del paciente permanecen locales por diseño"
+    }
   },
   "common": {
     "save": "Guardar",

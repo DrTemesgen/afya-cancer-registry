@@ -19,7 +19,14 @@
     "role": "Papel",
     "node": "Associado a",
     "enter": "Entrar",
-    "demoNote": "Apenas demonstração — sem dados reais de doentes. Os registos identificáveis existem apenas ao nível da unidade e do registo."
+    "demoNote": "Apenas demonstração — sem dados reais de doentes. Os registos identificáveis existem apenas ao nível da unidade e do registo.",
+    "welcome": "Bem-vindo",
+    "feat": {
+      "offline": "Funciona offline — sincroniza quando há ligação",
+      "languages": "Nas seis línguas da União Africana",
+      "standards": "Baseado em IARC, ICD-O-3, FHIR e DHIS2",
+      "privacy": "Os dados dos doentes permanecem locais por conceção"
+    }
   },
   "common": {
     "save": "Guardar",

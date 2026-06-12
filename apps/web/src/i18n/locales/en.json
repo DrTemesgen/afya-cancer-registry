@@ -19,7 +19,14 @@
     "role": "Role",
     "node": "Bound to",
     "enter": "Enter",
-    "demoNote": "Demo only — no real patient data. Identifiable records exist only at facility and registry level."
+    "demoNote": "Demo only — no real patient data. Identifiable records exist only at facility and registry level.",
+    "welcome": "Welcome",
+    "feat": {
+      "offline": "Works fully offline — syncs when connected",
+      "languages": "In all six African Union languages",
+      "standards": "Built on IARC, ICD-O-3, FHIR & DHIS2",
+      "privacy": "Patient data stays local by design"
+    }
   },
   "common": {
     "save": "Save",

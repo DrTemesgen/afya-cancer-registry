@@ -19,7 +19,14 @@
     "role": "Rôle",
     "node": "Rattaché à",
     "enter": "Entrer",
-    "demoNote": "Démonstration uniquement — aucune donnée réelle de patient. Les dossiers identifiables n’existent qu’au niveau de l’établissement et du registre."
+    "demoNote": "Démonstration uniquement — aucune donnée réelle de patient. Les dossiers identifiables n’existent qu’au niveau de l’établissement et du registre.",
+    "welcome": "Bienvenue",
+    "feat": {
+      "offline": "Fonctionne hors ligne — se synchronise une fois connecté",
+      "languages": "Dans les six langues de l’Union africaine",
+      "standards": "Basé sur IARC, ICD-O-3, FHIR et DHIS2",
+      "privacy": "Les données patients restent locales par conception"
+    }
   },
   "common": {
     "save": "Enregistrer",
