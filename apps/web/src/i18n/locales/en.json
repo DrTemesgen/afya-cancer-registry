@@ -7,6 +7,7 @@
     "home": "Home",
     "dashboard": "Dashboard",
     "newCase": "New case",
+    "paediatric": "Paediatric",
     "cases": "Cases",
     "registries": "Registries",
     "interop": "Interoperability",
@@ -67,6 +68,8 @@
     "verified": "Verified",
     "complete": "Complete",
     "draft": "Draft",
+    "yes": "Yes",
+    "no": "No",
     "search": "Search",
     "all": "All",
     "loading": "Loading…",
@@ -170,6 +173,71 @@
     "searchPlaceholder": "Search by ID, site, morphology…",
     "empty": "No cases match.",
     "restricted": "Your role sees aggregates only; individual records are not available at this tier."
+  },
+  "paed": {
+    "title": "Paediatric cancer registry",
+    "subtitle": "Childhood & adolescent cancer registration (ICCC-3 · Toronto staging)",
+    "registry": "Registry",
+    "checks": "Consistency checks",
+    "savedOk": "Paediatric record saved.",
+    "newRecord": "New record",
+    "savedTitle": "Saved paediatric records",
+    "empty": "No paediatric records yet.",
+    "years": "yrs",
+    "nutritionNote": "BMI and age band are computed locally. WHO weight/height/BMI-for-age z-scores require the official WHO Child Growth Standards reference tables to be loaded at deployment; until then nutrition status reads as unknown.",
+    "section": {
+      "demographics": "Demographics",
+      "diagnosis": "Diagnosis (ICCC-3)",
+      "staging": "Stage (Toronto Guidelines)",
+      "anthropometry": "Anthropometry & nutrition",
+      "treatment": "Treatment",
+      "outcome": "Outcome & follow-up"
+    },
+    "field": {
+      "patientId": "Patient ID (pseudonym)",
+      "sex": "Sex",
+      "dateOfBirth": "Date of birth",
+      "dateOfDiagnosis": "Date of diagnosis",
+      "ageYears": "Age at diagnosis",
+      "ageBand": "Age band (ICCC)",
+      "icccGroup": "ICCC-3 diagnostic group",
+      "topography": "Topography (ICD-O-3 site)",
+      "morphology": "Morphology (ICD-O-3 histology)",
+      "basis": "Basis of diagnosis",
+      "torontoCancer": "Toronto-staged cancer type",
+      "torontoTier": "Staging tier",
+      "stageValue": "Stage value",
+      "metastasis": "Metastasis at diagnosis",
+      "weightKg": "Weight (kg)",
+      "heightCm": "Height / length (cm)",
+      "bmi": "BMI (kg/m²)",
+      "nutrition": "Nutrition status",
+      "treatments": "Treatment given",
+      "treatmentStatus": "Treatment status",
+      "vitalStatus": "Vital status",
+      "lastContact": "Date of last contact",
+      "causeOfDeath": "Cause of death"
+    },
+    "hint": {
+      "partialDate": "YYYY / YYYY-MM / YYYY-MM-DD",
+      "icdo3site": "e.g. C71 (brain), C40 (bone)",
+      "icdo3morph": "e.g. 9510 (retinoblastoma), 8960 (nephroblastoma)",
+      "stageValue": "e.g. localised / regional / metastatic, or full stage"
+    },
+    "nutrition": {
+      "normal": "Normal",
+      "moderate": "Moderate undernutrition",
+      "severe": "Severe undernutrition",
+      "overweight": "Overweight / obesity",
+      "unknown": "Unknown (no reference data)"
+    }
+  },
+  "paedValidation": {
+    "required": "Required field is missing: {{field}}.",
+    "range": "{{field}} is outside the expected range ({{min}}–{{max}}).",
+    "birthAfterDiagnosis": "Date of birth is after the date of diagnosis.",
+    "outsidePaediatric": "Age {{age}} is outside the paediatric/AYA range (0–19) — please confirm.",
+    "causeOfDeathMissing": "Vital status is 'dead' but no cause of death is recorded."
   },
   "registries": {
     "title": "Registries & hierarchy",

@@ -23,6 +23,7 @@ export function Layout({
     { key: 'home', label: t('nav.home'), show: true },
     { key: 'dashboard', label: t('nav.dashboard'), show: true },
     { key: 'newCase', label: t('nav.newCase'), show: canCase },
+    { key: 'paediatric', label: t('nav.paediatric'), show: canCase },
     { key: 'cases', label: t('nav.cases'), show: true },
     { key: 'registries', label: t('nav.registries'), show: true },
     { key: 'interop', label: t('nav.interop'), show: true },

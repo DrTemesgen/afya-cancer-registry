@@ -7,6 +7,7 @@ import { Home } from './pages/Home'
 import { Dashboard } from './pages/Dashboard'
 import { CaseList } from './pages/CaseList'
 import { CaseEntry } from './pages/CaseEntry'
+import { Paediatric } from './pages/Paediatric'
 import { Registries } from './pages/Registries'
 import { Interop } from './pages/Interop'
 import { Settings } from './pages/Settings'
@@ -18,6 +19,7 @@ export type View =
   | 'cases'
   | 'newCase'
   | 'editCase'
+  | 'paediatric'
   | 'registries'
   | 'interop'
   | 'settings'
@@ -61,6 +63,8 @@ function renderView(view: View, editId: string | undefined, navigate: (v: View, 
       return <CaseEntry navigate={navigate} />
     case 'editCase':
       return <CaseEntry editId={editId} navigate={navigate} />
+    case 'paediatric':
+      return <Paediatric />
     case 'registries':
       return <Registries />
     case 'interop':
