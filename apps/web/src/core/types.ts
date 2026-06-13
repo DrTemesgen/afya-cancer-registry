@@ -147,3 +147,50 @@ export interface CodedValue<T extends string | number = string> {
   /** translated display labels keyed by language code. */
   labels: Record<string, string>
 }
+
+// --- paediatric (ICCC childhood-cancer module) ---
+
+/**
+ * Childhood / AYA age bands following the IICC-3 (International Incidence of
+ * Childhood Cancer, 3rd ed.) 5-year groupings. Ages ≥ 20 fall outside the
+ * paediatric/AYA range and resolve to `null` from the band assignment helpers.
+ */
+export type PaedAgeBand = '<1' | '1-4' | '5-9' | '10-14' | '15-19'
+
+/** A single anthropometric measurement, the input to nutrition assessment. */
+export interface Anthropometry {
+  sex: SexCode
+  /** Date the measurement was taken; with dateOfBirth this derives the age. */
+  date?: PartialDate
+  /** Completed age in months at measurement, when known directly. */
+  ageMonths?: number
+  /** Body weight, kilograms. */
+  weightKg?: number
+  /** Recumbent length (< 2 y) or standing height (≥ 2 y), centimetres. */
+  heightCm?: number
+}
+
+/** A specific WHO undernutrition / overnutrition indicator flag. */
+export type NutritionFlag =
+  | 'underweight'
+  | 'severe-underweight'
+  | 'stunting'
+  | 'severe-stunting'
+  | 'wasting'
+  | 'severe-wasting'
+  | 'overweight'
+  | 'obesity'
+
+/** WHO-style nutrition classification derived from anthropometric z-scores. */
+export interface NutritionStatus {
+  /** Weight-for-age z-score, or null when not derivable. */
+  waz: number | null
+  /** Length/height-for-age z-score, or null when not derivable. */
+  haz: number | null
+  /** BMI-for-age z-score, or null when not derivable. */
+  bmiz: number | null
+  /** Coarse category for triage and dashboards. */
+  category: 'normal' | 'moderate' | 'severe' | 'overweight' | 'unknown'
+  /** Specific WHO indicator flags raised by this measurement. */
+  flags: NutritionFlag[]
+}
