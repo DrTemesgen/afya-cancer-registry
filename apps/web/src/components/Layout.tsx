@@ -33,6 +33,7 @@ export function Layout({
   return (
     <div className="app">
       <header className="topbar">
+        <div className="topbar-inner">
         <div className="brand">
           <img src="/favicon.svg" alt="" />
           <span>{t('app.title')}</span>
@@ -74,6 +75,7 @@ export function Layout({
             </button>
           </div>
         )}
+        </div>
       </header>
       <main className="content">{children}</main>
     </div>
